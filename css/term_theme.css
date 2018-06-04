@@ -22,3 +22,7 @@ a {
 	color: inherit;
 	cursor: auto;
 }
+
+.divider {
+	border-bottom-color: #00FF00;
+}
