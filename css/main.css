@@ -1,0 +1,14 @@
+header {
+	text-align: right;
+	font-size: 10pt;
+}
+
+.divider {
+	margin:auto;
+	width: 15%;
+	border-bottom: 2px dashed black;
+}
+
+.contents {
+	text-align: center;
+}
