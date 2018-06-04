@@ -12,3 +12,9 @@ header {
 .contents {
 	text-align: center;
 }
+
+footer {
+	position: absolute;
+	bottom: 0;
+	font-size: .85em;
+}
