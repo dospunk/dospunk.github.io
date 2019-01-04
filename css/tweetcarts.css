@@ -1,0 +1,53 @@
+:root {
+	--iframe-resize-value: .75;
+	--iframe-width: 768px;
+}
+
+.grid-container {
+	display: grid;
+	grid-column-gap: 10px;
+	grid-template-columns: calc(var(--iframe-width) * var(--iframe-resize-value)) auto;
+	grid-template-rows: 4em auto;
+}
+
+.cart {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	-moz-transform: scale(var(--iframe-resize-value), var(--iframe-resize-value));
+	-webkit-transform: scale(var(--iframe-resize-value), var(--iframe-resize-value));
+	-o-transform: scale(var(--iframe-resize-value), var(--iframe-resize-value));
+	-ms-transform: scale(var(--iframe-resize-value), var(--iframe-resize-value));
+	transform: scale(var(--iframe-resize-value), var(--iframe-resize-value));
+	-moz-transform-origin: top left;
+	-webkit-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	transform-origin: top left;
+}
+
+.title {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+.code {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	background-color: #eee;
+	border-radius: 5%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+code {
+	white-space: pre;
+}
+
+h1 {
+	margin: 0px 0px 0px 0px;
+}
+
+iframe {
+	width: var(--iframe-width);
+	height: 444px;
+}
