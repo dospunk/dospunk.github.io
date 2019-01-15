@@ -1,0 +1,89 @@
+body {
+	background-color: #36465d;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	height: 35px;
+	border-bottom-style: solid;
+	border-bottom-color: #778;
+	border-bottom-width: .5px;
+	color: #599fd0;
+}
+
+header::before {
+	content: '';
+	background-image: url('./images/tumblr_logo.JPG');
+}
+
+header > a {
+	color: #9ca2ae;
+}
+
+main, footer {
+	background-color: white;
+	margin-left: 20%;
+	width: 540px;
+	padding-left: 15px;
+}
+
+main {
+	margin-top: 30px;
+	border-radius: 3px 3px 0 0;
+	padding-top: 15px;
+	padding-bottom: 14px;
+}
+
+footer {
+	border-radius: 0 0 3px 3px;
+	position: relative;
+	margin-top: -15px;
+	color: rgb(143, 143, 143);
+	padding-bottom: 20px;
+}
+
+footer > p > a {
+	color: inherit;
+}
+
+footer > p::before{
+	content: "#";
+}
+
+footer > p > a::before {
+	content: "  #";
+}
+
+.title, .contents {
+	text-align: left;
+	color: rgb(68, 68, 68)
+}
+
+.title::before {
+	font-weight: bold;
+	content: "dospunk";
+}
+
+.title {
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.contents {
+	font-size: 13px;
+}
+
+.contents > a {
+	color: inherit;
+	text-decoration: rgba(68, 68, 68, .25) underline;
+}
+
+.divider {
+	display: none;
+}
+
+#tumblr-theme {
+	text-decoration: inherit;
+	color: inherit;
+	cursor: auto;
+}
