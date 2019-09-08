@@ -11,6 +11,15 @@
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebBuilds.json", {onProgress: UnityProgress});
     </script>
+    <style>
+      dt{
+        font-size: 120%;
+      }
+      
+      dd{
+        padding-left: 5px;
+      }
+    </style>
   </head>
   <body>
     <div class="webgl-content">
@@ -19,6 +28,7 @@
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
         <div class="title">Car Go Zoom</div>
+        <br>
         <b>Controls</b>
         <dl>
           <dt>Turn left/right</dt>
